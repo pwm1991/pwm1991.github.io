@@ -1,0 +1,24 @@
+{
+  "baseURL": "http://example.org/",
+  "languageCode": "en-us",
+  "title": "Config.Title",
+  "enableRobotsTXT": true,
+    "menu": {
+       "main": [
+          {
+             "identifier": "blog",
+             "name": "This is the blog section",
+             "title": "blog section",
+             "url": "/blog/",
+             "weight": -110
+          },
+          {
+             "identifier": "about",
+             "name": "About",
+             "title": "About",
+             "url": "/about/",
+             "weight": -110
+            }
+       ]
+    }
+}
