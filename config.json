@@ -4,8 +4,5 @@
   "title": "Pete Martin",
   "enableRobotsTXT": true,
   "document_title": "Pete Martin",
-  "social": {
-    "linkedin": "pwm1991",
-    "twitter": "pwm1991"
-  }
+  "publishDir": "docs"
 }
