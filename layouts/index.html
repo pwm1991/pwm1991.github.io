@@ -1,0 +1,8 @@
+{{ define "main" }}
+  <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+<div>
+  {{ range first 10 .Site.RegularPages }}
+      {{ .Render "summary"}}
+  {{ end }}
+</div>
+{{ end }}

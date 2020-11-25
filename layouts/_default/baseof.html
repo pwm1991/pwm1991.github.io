@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {{ block "title" . }}
+        {{ .Site.Title }}
+      {{ end }}
+    </title>
+    {{ $style := resources.Get "sass/index.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  </head>
+  <body>
+    <!-- Code that all your templates share, like a header -->
+    <main>
+      <!-- <nav>
+        <div class="intro">Title</div>
+          
+      </nav> -->
+      <div class="sidebar">
+        {{ partial "sidebar" . }}
+      </div>
+    </main>
+  </body>
+</html>
