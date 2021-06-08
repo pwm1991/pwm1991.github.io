@@ -1,5 +1,6 @@
 @import "reset";
 @import "color";
+@import "breakpoints";
 @import "font";
 @import "grid";
 
@@ -36,10 +37,6 @@ main {
   align-items: center;
   padding: $padding-default;
   min-height: calc(100%  - 30px);
-}
-
-.homepage {
-  width: 50%;
 }
 
 .text-vertical {

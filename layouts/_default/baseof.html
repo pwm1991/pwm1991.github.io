@@ -4,13 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-      {{ block "title" . }}
-        {{ .Site.Title }}
-      {{ end }}
+      {{ block "title" . }}{{ .Site.Title }}{{ end }}
     </title>
     {{ partial "head/meta" . }}
     {{ partial "head/ga" . }}
-    {{ $style := resources.Get "sass/index.scss" | toCSS | minify | fingerprint }}
+    {{ $style := resources.Get "index.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
 
