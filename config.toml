@@ -1,0 +1,11 @@
+baseURL = "https://www.pwm1991.com"
+languageCode = "en-us"
+title = "Pete Martin"
+enableRobotsTXT = true
+document_title = "Pete Martin"
+publishDir = "docs"
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

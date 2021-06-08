@@ -13,18 +13,10 @@
     {{ $style := resources.Get "sass/index.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
+
   <body>
-    <nav>
-      {{ partial "nav" . }}
-    </nav>
-    <main>
-      <!-- <nav>
-        <div class="intro">Title</div>
-          
-      </nav> -->
-      <div class="sidebar">
-        {{ partial "sidebar" . }}
-      </div>
+    <main aria-role="main">
+      {{ block "main" .}}{{end }}
     </main>
   </body>
 </html>
