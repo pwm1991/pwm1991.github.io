@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Pete Martin"
 enableRobotsTXT = true
 document_title = "Pete Martin"
-publishDir = "build"
+publishDir = "docs"
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
