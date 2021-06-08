@@ -8,23 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Feb 2021 20:16:36 +0000</lastBuildDate><atom:link href="https://www.pwm1991.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Olive</title>
-      <link>https://www.pwm1991.com/tests/olive/</link>
+      <title>Background</title>
+      <link>https://www.pwm1991.com/cv/</link>
       <pubDate>Sun, 07 Feb 2021 20:16:36 +0000</pubDate>
       
-      <guid>https://www.pwm1991.com/tests/olive/</guid>
-      <description>So you&amp;rsquo;re more interested in cute dog pics? I shall oblige.</description>
+      <guid>https://www.pwm1991.com/cv/</guid>
+      <description>Charlotte Tilbury - current At the moment I&amp;rsquo;m working on deploying Snowplow, a real-time behavioural data product to enable personalisation on the website. This has involved building models, designing schema and CI/CD. Primarily written so far in SQL (obvs) and Node/JavaScript. I&amp;rsquo;m also standing up Google Tag Manager Server to offload frontend tracking.
+I also support on the Google Analytics and Google Tag Manager deployments. I work with squads to implement tracking on features as they come up, design dashboards in Looker, and model data out in BQ for consumption.</description>
     </item>
     
     <item>
-      <title>test</title>
-      <link>https://www.pwm1991.com/tests/cv/</link>
+      <title>Olive</title>
+      <link>https://www.pwm1991.com/olive/</link>
       <pubDate>Sun, 07 Feb 2021 20:16:36 +0000</pubDate>
       
-      <guid>https://www.pwm1991.com/tests/cv/</guid>
-      <description>Web Analyst at Charlotte Tilbury    September 2020 - Present
-Technical Web Analyst at Cancer Research UK    December 2019 - September 2020
-Digital Marketing and Analytics Officer, The Royal Society    June 2016 - December 2019</description>
+      <guid>https://www.pwm1991.com/olive/</guid>
+      <description>So you&amp;rsquo;re more interested in cute dog pics? Fine.
+Olive is a miniature poodle who, as of June 2021, is about a year old.
+She knows loads of tricks, persistently rings a bell to go outside, and likes to bark at cats.</description>
     </item>
     
   </channel>
