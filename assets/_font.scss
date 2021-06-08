@@ -3,3 +3,7 @@ $font-size-xxxl: $font-size-default * 4;
 $font-size-lg: $font-size-default * 1.6;
 $font-size-md: $font-size-default * 1.2;
 $font-size-sm: $font-size-default * 0.9;
+
+h3 {
+  padding-top: $padding-default-sm;
+}

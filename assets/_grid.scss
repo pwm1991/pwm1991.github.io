@@ -8,6 +8,10 @@
     "name"
     "content"
     "nav"; 
+  width: 100%;
+  @include respond-to(medium) {
+    width: 50%;
+  }
 }
 
 .name { 
