@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pete Martin</title>
+    <link>https://www.pwm1991.com/</link>
+    <description>Recent content on Pete Martin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Feb 2021 20:16:36 +0000</lastBuildDate><atom:link href="https://www.pwm1991.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Background</title>
+      <link>https://www.pwm1991.com/cv/</link>
+      <pubDate>Sun, 07 Feb 2021 20:16:36 +0000</pubDate>
+      
+      <guid>https://www.pwm1991.com/cv/</guid>
+      <description>Charlotte Tilbury - current At the moment I&amp;rsquo;m working on deploying Snowplow, a real-time behavioural data product to enable personalisation on the website. This has involved building models, designing schema and CI/CD. Primarily written so far in SQL (obvs) and Node/JavaScript. I&amp;rsquo;m also standing up Google Tag Manager Server to offload frontend tracking.
+I also support on the Google Analytics and Google Tag Manager deployments. I work with squads to implement tracking on features as they come up, design dashboards in Looker, and model data out in BQ for consumption.</description>
+    </item>
+    
+    <item>
+      <title>Olive</title>
+      <link>https://www.pwm1991.com/olive/</link>
+      <pubDate>Sun, 07 Feb 2021 20:16:36 +0000</pubDate>
+      
+      <guid>https://www.pwm1991.com/olive/</guid>
+      <description>So you&amp;rsquo;re more interested in cute dog pics? Fine.
+Olive is a miniature poodle who, as of June 2021, is about a year old.
+She knows loads of tricks, persistently rings a bell to go outside, and likes to bark at cats.</description>
+    </item>
+    
+  </channel>
+</rss>
