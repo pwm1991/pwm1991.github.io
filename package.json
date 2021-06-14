@@ -1,0 +1,25 @@
+{
+  "name": "pwm1991.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "build": "hugo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwm1991/pwm1991.github.io.git"
+  },
+  "author": "pwm1991",
+  "devDependencies": {
+    "husky": "^6.0.0"
+  },
+  "hooks": {
+    "pre-push": "npm run build; git add docs/*; git commit -m 'husky build'"
+  }
+}
