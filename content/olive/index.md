@@ -2,7 +2,10 @@
 title: "Olive"
 date: 2021-02-07T20:16:36Z
 tags: []
+<<<<<<< HEAD
 nav: true   
+=======
+>>>>>>> master
 ---
 
 So you're more interested in cute dog pics? Fine.
@@ -13,4 +16,8 @@ She knows loads of tricks, persistently rings a bell to go outside, and likes to
 
 ![Olive with a ball](ball.JPG)
 ![Olive in a coat](coat.jpeg)
+<<<<<<< HEAD
 ![Olive with a plant pot](pot.jpg)
+=======
+![Olive with a plant pot](pot.jpg)
+>>>>>>> master
