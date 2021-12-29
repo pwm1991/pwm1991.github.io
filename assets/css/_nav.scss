@@ -1,3 +1,5 @@
+$border-setting: 1px solid $border-color;
+
 .nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr auto;
@@ -9,11 +11,11 @@
         border-bottom: none;
       }
     &:first-child {
-      border-left: 1px solid $border-color;
+      border-left: $border-setting;
     }
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
-    border-right: 1px solid $border-color;
+    border-top: $border-setting;
+    border-bottom: $border-setting;
+    border-right: $border-setting;
     text-align: center;
     text-decoration: none;
     padding: $padding-default-sm;

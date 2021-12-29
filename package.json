@@ -18,7 +18,6 @@
   },
   "author": "pwm1991",
   "devDependencies": {
-    "husky": "^6.0.0",
     "prettier": "2.5.1"
   }
 }
