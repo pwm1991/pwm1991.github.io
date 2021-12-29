@@ -1,4 +1,11 @@
-$font-color: #1C1D21;
-$link-color: #0a3672;
-$border-color: #8AC6D0;
-$background-color: #efeff1;
+$font-color: $nord1;
+$link-color: $nord2;
+$link-color-hover: $nord3;
+$border-color: $nord4;
+$background-color: $nord6;
+
+$link-color: $nord2;
+$link-decoration: underline !default;
+$button-hover-color: $nord10;
+$button-link-hover-color: $nord6;
+$default-transition: all 0.4s ease 0s;
