@@ -28,5 +28,5 @@
     gtag('config', 'G-2ZHZM86Q7F');
 </script>
 
-{{ $style := resources.Get "index.scss" | toCSS | minify | fingerprint }}
+{{ $style := resources.Get "css/index.scss" | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">

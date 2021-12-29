@@ -1,0 +1,31 @@
+.container {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto 1fr auto;
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "name"
+    "nav"
+    "content"
+    "skills";
+  width: 100%;
+  @include respond-to(medium) {
+    width: 35%;
+  }
+}
+
+.name { 
+  grid-area: name;
+  display: grid;
+  align-items: end;
+  padding: $padding-default;
+}
+
+.content { 
+  grid-area: content;
+  @include respond-to(medium) {
+    border: 1px solid $border-color;
+  }
+  padding: $padding-default;
+}

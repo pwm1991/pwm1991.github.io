@@ -1,0 +1,31 @@
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-area: nav;
+  a {
+      @include respond-to(medium) {
+        border-bottom: none;
+      }
+    &:first-child {
+      border-left: 1px solid $border-color;
+    }
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    text-align: center;
+    text-decoration: none;
+    padding: $padding-default-sm;
+    transition: $default-transition;
+    &:hover {
+      transition: $default-transition;
+      color: $button-link-hover-color;
+      @for $i from 1 through 3 {
+          &:nth-of-type(#{$i}) {
+              @extend .gradient-#{$i};
+          }
+      }
+    }
+  }
+}

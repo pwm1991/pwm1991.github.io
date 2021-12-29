@@ -4,7 +4,9 @@
 @import "breakpoints";
 @import "font";
 @import "grid";
-@import "skills";
+@import "gradients";
+// components
+@import "nav";
 
 @mixin for-desktop-up {
   @media (min-width: 1000px) { @content; }
