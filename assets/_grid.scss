@@ -6,8 +6,9 @@
   gap: 0px 0px; 
   grid-template-areas: 
     "name"
+    "nav"
     "content"
-    "nav"; 
+    "skills";
   width: 100%;
   @include respond-to(medium) {
     width: 35%;
@@ -38,12 +39,15 @@
       border-left: 1px solid $border-color;
     }
     border-right: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;
     text-align: center;
     text-decoration: none;
     padding: $padding-default-sm;
+    transition: $default-transition;
     &:hover {
-      background-color: darken($background-color, 4);
+      background-color: $button-hover-color;
+      transition: $default-transition;
+      color: $button-link-hover-color;
     }
   }
 }

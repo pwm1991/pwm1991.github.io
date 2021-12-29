@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      {{ block "title" . }}{{ .Site.Title }}{{ end }}
-    </title>
-    {{ partial "head/meta" . }}
-    {{ partial "head/ga" . }}
-    {{ $style := resources.Get "index.scss" | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ partial "head" . }}
   </head>
 
   <body>
     <main aria-role="main">
-      {{ block "main" .}}{{end }}
+      <div class="container" role="main">
+        {{ block "main" .}}{{ end }}
+      </div>
     </main>
   </body>
 </html>

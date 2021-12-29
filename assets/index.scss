@@ -1,11 +1,17 @@
 @import "reset";
+@import "nord";
 @import "color";
 @import "breakpoints";
 @import "font";
 @import "grid";
+@import "skills";
 
 @mixin for-desktop-up {
   @media (min-width: 1000px) { @content; }
+}
+
+html,body,h1,h2,h3,h4,p {
+  font-family: $font-family;
 }
 
 html, body {
@@ -13,7 +19,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: $font-family;
   font-size: $font-size-default;
   color: $font-color;
   background-color: $background-color;
@@ -27,16 +33,13 @@ p {
   padding-top: $padding-default-sm;
 }
 
-a {
-  color: $link-color;
-}
-
 main {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  width: 100%;
+  min-height: 100%;
+  grid-auto-flow: column;
   align-items: center;
-  padding: $padding-default;
-  min-height: calc(100%  - 30px);
+  justify-items: center;
 }
 
 .text-vertical {

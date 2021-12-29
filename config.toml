@@ -1,5 +1,6 @@
 baseURL = "https://www.pwm1991.com"
 languageCode = "en-us"
+DefaultContentLanguage = "en"
 title = "Pete Martin"
 description = "Pete Martin's homepage"
 enableRobotsTXT = true

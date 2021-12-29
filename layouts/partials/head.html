@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+    {{- block "title" . -}}
+        {{ if not .IsHome }}
+            {{- .Title }} - 
+        {{ end }}
+        {{ .Site.Title -}}
+    {{ end }}
+</title>
+
+<meta name="description" content="Pete Martin's website">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<meta name="google" content="nositelinkssearchbox">
+<meta name="google" content="notranslate">
+<meta name="twitter:dnt" content="on">
+
+<script async
+    src="https://www.googletagmanager.com/gtag/js?id=G-2ZHZM86Q7F"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2ZHZM86Q7F');
+</script>
+
+{{ $style := resources.Get "index.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">

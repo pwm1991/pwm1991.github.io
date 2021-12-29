@@ -4,10 +4,8 @@ date: 2021-02-07T20:16:36Z
 tags: []
 ---
 
-👋  
+Hi, I'm Pete.
 
-I work on web analytics and personalisation at Charlotte Tilbury.
+I live in London with my partner Amy and dog <a href="/olive">Olive</a>.
 
-My day-to-day activities include data modelling, building pipelines, asking interesting (to me at least) questions, and setting up marketing analytics. At the moment I'm building out Snowplow.
-
-I live in London with my partner Amy and <a href="/olive">Olive</a> the Poodle.
+Day to day I work on data engineering at Charlotte Tilbury.
