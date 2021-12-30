@@ -7,6 +7,18 @@
   <body>
     <main aria-role="main">
       <div class="container" role="main">
+        <div class="name">
+          <h1 class="heading-big text-ver">
+            {{ if .IsHome }}
+            Pete Martin
+            {{ else }}
+              <a href="/">Pete Martin</a>
+            {{ end }}
+          </h1>
+        </div>
+        <nav class="nav" role="navigation" aria-label="Navigation">
+          {{ partial "nav" . }}
+        </nav>
         {{ block "main" .}}{{ end }}
       </div>
     </main>
