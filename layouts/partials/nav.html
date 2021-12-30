@@ -1,3 +1,4 @@
-<a href="/background">Background</a>
-<a href="mailto:w@pwm1991.com">Get in touch</a>
-<a href="https://www.linkedin.com/in/pwm1991" rel="nooopener noreferrer" target="_blank">LinkedIn</a>
+{{ $currentPage := . }}
+{{ range .Site.Menus.nav }}
+<a href="{{ .URL }}" title="{{ .Title }}" {{ if eq .Page nil }}rel="nooopener noreferrer" target="_blank"{{ end }}>{{ .Name }}</a>
+{{ end }}

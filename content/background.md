@@ -2,8 +2,10 @@
 title: "Background"
 date: 2021-02-07T20:16:36Z
 tags: []
-nav: true
 showSkills: true
+menu:
+    nav:
+        page: Background
 ---
 
 ### Charlotte Tilbury - current

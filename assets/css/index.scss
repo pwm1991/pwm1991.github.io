@@ -7,6 +7,7 @@
 @import "gradients";
 // components
 @import "nav";
+@import "blog";
 
 @mixin for-desktop-up {
   @media (min-width: 1000px) { @content; }
@@ -38,7 +39,7 @@ p {
 main {
   display: grid;
   width: 100%;
-  min-height: 100%;
+  // min-height: 100%;
   grid-auto-flow: column;
   align-items: center;
   justify-items: center;
@@ -50,6 +51,7 @@ main {
 
 .heading-big {
   font-size: $font-size-xxxl;
+  display: inline-block;
 }
 
 .padding-sm {

@@ -1,4 +1,11 @@
-$border-setting: 1px solid $border-color;
+@mixin gradient-selector {
+  @for $i from 1 through 3 {
+          &:nth-of-type(#{$i}) {
+              @extend .gradient-#{$i};
+              border: 1px transparent;
+          }
+      }
+}
 
 .nav {
   display: grid;
@@ -7,27 +14,19 @@ $border-setting: 1px solid $border-color;
   gap: 0px 0px;
   grid-area: nav;
   a {
-      @include respond-to(medium) {
-        border-bottom: none;
-      }
-    &:first-child {
-      border-left: $border-setting;
+    border-left: $grid-border;
+    border-top: $grid-border;
+    &:last-child {
+      border-right: $grid-border;
     }
-    border-top: $border-setting;
-    border-bottom: $border-setting;
-    border-right: $border-setting;
     text-align: center;
     text-decoration: none;
     padding: $padding-default-sm;
     transition: $default-transition;
-    &:hover {
+    &:hover, &:active {
       transition: $default-transition;
       color: $button-link-hover-color;
-      @for $i from 1 through 3 {
-          &:nth-of-type(#{$i}) {
-              @extend .gradient-#{$i};
-          }
-      }
+      @include gradient-selector;
     }
   }
 }

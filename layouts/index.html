@@ -1,8 +1,3 @@
 {{ define "main" }}
-  <div class="name">
-    <h1 class="heading-big text-ver">{{.Title}}</h1>
-  </div>
-  <div class="content" aria-label="Content">
-    {{.Content}}
-  </div>
+  {{ partial "list" . }}
 {{ end }}

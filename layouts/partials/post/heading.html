@@ -1,0 +1,12 @@
+<div class="title__head">
+    <div class="list__category">
+        {{ range (.GetTerms "tags") }} {{ .LinkTitle }} {{ end }}
+    </div>
+    <div class="list__heading">
+        <a class="list__heading list__heading-link"
+            href="{{.Permalink}}">
+            {{.Title}}
+        </a>
+    </div>
+    <div class="list__date">{{.Date.Format "01 January 2006"}}</div>
+</div>

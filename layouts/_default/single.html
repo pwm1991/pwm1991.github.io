@@ -1,17 +1,13 @@
 {{- define "main" -}}
-  <nav class="nav" role="navigation" aria-label="Navigation">
-    {{ partial "nav" . }}
-  </nav>
-  <div class="content" aria-label="Content">
-    <h2>{{ .Title }}</h2>
+    <div class="" aria-label="Content" role=>
     {{ if .Parent.IsSection }}
-    <div class="list__date">
-        {{.Date.Format "01 January 2006"}}
-    </div>
+      {{ partial "post/heading" . }}
+    {{ else }}
+      <h2 role="heading">{{ .Title }}</h2>
     {{ end }}
     {{.Content}}
   </div>
   {{ if .Params.showSkills }}
-  {{ partial "skills" . }}
+    {{ partial "skills" . }}
   {{ end }}
 {{- end -}}

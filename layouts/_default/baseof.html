@@ -7,8 +7,8 @@
   <body>
     <main aria-role="main">
       <div class="container" role="main">
-        <div class="name">
-          <h1 class="heading-big text-ver">
+        <div class="container__child name">
+          <h1 class="heading-big">
             {{ if .IsHome }}
             Pete Martin
             {{ else }}
@@ -19,7 +19,15 @@
         <nav class="nav" role="navigation" aria-label="Navigation">
           {{ partial "nav" . }}
         </nav>
-        {{ block "main" .}}{{ end }}
+        <div class="container__child byline">
+          {{- partial "byline" . -}}
+        </div>
+        <div class="container__child content">
+          {{ block "main" .}}{{ end }}
+        </div>
+        <div class="container__child footer">
+          {{ partial "footer" .}}
+        </div>
       </div>
     </main>
   </body>

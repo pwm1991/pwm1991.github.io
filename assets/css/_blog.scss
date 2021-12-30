@@ -1,0 +1,20 @@
+.section__list {
+    margin: 0;
+}
+.title__head {
+    padding-bottom: $padding-default;
+}
+.list__category {
+    text-transform: uppercase;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+}
+.list__heading {
+    a {
+        text-decoration: none;
+    }
+    font-size: $font-size-md;
+}
+.list__date {
+    font-size: $font-size-xs;
+}

@@ -11,3 +11,10 @@ publishDir = "docs"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+[menu]
+  [[menu.nav]]
+    name = "Get in touch"
+    url = "mailto:w@pwm1991.com"
+  [[menu.nav]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/pwm1991"
