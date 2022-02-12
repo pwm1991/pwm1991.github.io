@@ -1,31 +1,45 @@
+$grid-border: 1px solid $border-color;
+
+@mixin default-grid-item {
+    display: grid;
+    align-items: end;
+}
+
 .container {
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: auto 1fr auto;
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "name"
-    "nav"
-    "content"
-    "skills";
-  width: 100%;
-  @include respond-to(medium) {
-    width: 35%;
-  }
+    display: grid;
+    grid-column: 1;
+    grid-auto-flow: row;
+    width: 100%;
+    @include respond-to(large) {
+        width: 50% !important;
+        max-width: 700px;
+    }
+    @include respond-to(medium) {
+        width: 35%;
+    }
+    @include respond-to(small) {
+        width: 50%;
+    }
+    .container__child {
+        padding: $padding-default;
+        border: $grid-border;
+        &:not(:last-child) {
+            border-bottom: none;
+        }
+        &.nav {
+            padding: 0;
+        }
+    }
 }
 
-.name { 
-  grid-area: name;
-  display: grid;
-  align-items: end;
-  padding: $padding-default;
-}
-
-.content { 
-  grid-area: content;
-  @include respond-to(medium) {
-    border: 1px solid $border-color;
-  }
-  padding: $padding-default;
+.content {
+    @include respond-to(medium) {
+        border-top: 0;
+    }
+    @include respond-to(medium) {
+        border-top: 0;
+    }
+    @include respond-to(small) {
+        border-top: 0;
+    }
 }

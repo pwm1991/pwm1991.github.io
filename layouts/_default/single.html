@@ -1,15 +1,11 @@
-{{- define "main" -}}
-  <div class="name">
-    <h1 class="heading-big text-ver"><a href="/">Pete Martin</a></h1>
-  </div>
-  <nav class="nav" role="navigation" aria-label="Navigation">
-    {{ partial "nav" . }}
-  </nav>
-  <div class="content" aria-label="Content">
-    <h2>{{ .Title }}</h2>
+{{ define "main" }}
+<div>
+    {{ if .Parent.IsSection }}
+        {{ partial "post/heading" . }}
+    {{ else }}
+        <h2 role="heading">{{ .Title }}</h2>
+    {{ end }}
+
     {{.Content}}
-  </div>
-  {{ if .Params.showSkills }}
-  {{ partial "skills" . }}
-  {{ end }}
+</div>
 {{- end -}}

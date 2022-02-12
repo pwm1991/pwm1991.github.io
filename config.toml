@@ -6,8 +6,17 @@ description = "Pete Martin's homepage"
 enableRobotsTXT = true
 document_title = "Pete Martin"
 publishDir = "docs"
+paginate = 6
+paginatePath = "blog"
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+[menu]
+  [[menu.nav]]
+    name = "Get in touch"
+    url = "mailto:w@pwm1991.com"
+  [[menu.nav]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/pwm1991"

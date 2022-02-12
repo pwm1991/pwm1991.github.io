@@ -1,11 +1,5 @@
 {{ define "main" }}
-  <div class="name">
-    <h1 class="heading-big text-ver">{{.Title}}</h1>
-  </div>
-  <nav class="nav" role="navigation" aria-label="Navigation">
-    {{ partial "nav" . }}
-  </nav>
-  <div class="content" aria-label="Content">
-    {{.Content}}
-  </div>
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
+    {{ partial "list/list" . }}
+    {{ partial "list/pagination" . }}
 {{ end }}

@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    {{ partial "head" . }}
-  </head>
-
-  <body>
-    <main aria-role="main">
-      <div class="container" role="main">
-        {{ block "main" .}}{{ end }}
-      </div>
-    </main>
-  </body>
+    <head>
+        {{ partial "head/head" . }}
+    </head>
+    <body>
+        <main aria-role="main">
+            <div class="container" role="main">
+                <div class="container__child">
+                    {{ partial "main/heading" . }}
+                </div>
+                <div class="container__child nav">
+                    {{ partial "nav" . }}
+                </div>
+                {{ if .IsHome }}
+                <div class="container__child" role="text" aria-label="About Pete">
+                    {{- partial "main/byline" . -}}
+                </div>
+                {{ end }}
+                {{ if .Params.showSkills }}
+                <div class="container_child" aria-label="Pete's skills">
+                    {{ partial "background/skills" . }}
+                </div>
+                {{ end }}
+                <div class="container__child content" role="main">
+                    {{ block "main" .}}{{ end }}
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

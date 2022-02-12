@@ -1,0 +1,15 @@
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
+{{ $paginatorSize := $paginator.NumberOfElements }}
+{{ $paginatorIndex := 0 }}
+<div class="section__list-container" aria-label="Content">
+        {{ range $paginator.Pages }}
+        {{ $paginatorIndex = (add $paginatorIndex 1)}}
+        <article class="list__list-item">
+            {{ partial "post/heading" . }}
+            {{.Content}}
+            {{ if lt $paginatorIndex $paginatorSize }}
+                {{ partial "post/divider" .}}
+            {{ end }}
+        </article>
+        {{ end }}
+</div>

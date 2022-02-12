@@ -7,6 +7,7 @@
 @import "gradients";
 // components
 @import "nav";
+@import "blog";
 
 @mixin for-desktop-up {
   @media (min-width: 1000px) { @content; }
@@ -28,7 +29,7 @@ html, body {
 }
 
 p {
-  &:first {
+  &:first-child {
     margin-top: 0;
     padding-top: 0;
   }
@@ -38,18 +39,15 @@ p {
 main {
   display: grid;
   width: 100%;
-  min-height: 100%;
+  // min-height: 100%;
   grid-auto-flow: column;
   align-items: center;
   justify-items: center;
 }
 
-.text-vertical {
-  writing-mode: sideways-lr;
-}
-
 .heading-big {
   font-size: $font-size-xxxl;
+  display: inline-block;
 }
 
 .padding-sm {
