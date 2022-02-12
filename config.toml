@@ -6,6 +6,8 @@ description = "Pete Martin's homepage"
 enableRobotsTXT = true
 document_title = "Pete Martin"
 publishDir = "docs"
+paginate = 6
+paginatePath = "blog"
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]

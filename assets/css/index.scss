@@ -29,7 +29,7 @@ html, body {
 }
 
 p {
-  &:first {
+  &:first-child {
     margin-top: 0;
     padding-top: 0;
   }
@@ -43,10 +43,6 @@ main {
   grid-auto-flow: column;
   align-items: center;
   justify-items: center;
-}
-
-.text-vertical {
-  writing-mode: sideways-lr;
 }
 
 .heading-big {

@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
+<div class="section__list-container" aria-label="Content">
+        {{ range $paginator.Pages }}
+        <article class="list__list-item">
+            {{ partial "post/heading" . }}
+            <div class="list__content">{{.Content}}</div>
+            {{ partial "post/divider" .}}
+        </article>
+        {{ end }}
+</div>
+{{ end }}

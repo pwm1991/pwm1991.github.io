@@ -1,13 +1,11 @@
-{{- define "main" -}}
-    <div class="" aria-label="Content" role=>
+{{ define "main" }}
+<div>
     {{ if .Parent.IsSection }}
-      {{ partial "post/heading" . }}
+        {{ partial "post/heading" . }}
     {{ else }}
-      <h2 role="heading">{{ .Title }}</h2>
+        <h2 role="heading">{{ .Title }}</h2>
     {{ end }}
+
     {{.Content}}
-  </div>
-  {{ if .Params.showSkills }}
-    {{ partial "skills" . }}
-  {{ end }}
+</div>
 {{- end -}}

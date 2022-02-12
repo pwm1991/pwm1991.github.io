@@ -1,3 +1,5 @@
 {{ define "main" }}
-  {{ partial "list" . }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
+    {{ partial "list/list" . }}
+    {{ partial "list/pagination" . }}
 {{ end }}

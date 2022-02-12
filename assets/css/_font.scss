@@ -15,11 +15,23 @@ h3 {
 
 a {
   color: $link-color;
+  &.icon-link-header {
+    text-decoration: none;
+    color: inherit;
+    &::after {
+      font-size: 90%;
+      content: "🔗"
+    }
+  }
 }
 
 p {
   &.bold {
     font-weight: bold;
+  }
+  &.subtitle {
+    font-weight: 400;
+    font-size: $font-size-sm;
   }
 }
 
