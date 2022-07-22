@@ -24,7 +24,7 @@
 
 
 {{ if hugo.IsProduction }}
-<script async
+<script async   
     src="https://www.googletagmanager.com/gtag/js?id=G-WD310MPEEC"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -35,7 +35,8 @@
 </script>
 {{ end }}
 
-{{ $style := resources.Get "css/index.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+<!-- {{ $style := resources.Get "css/index.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}"> -->
+
 
 {{ partial "head/schema" . }}

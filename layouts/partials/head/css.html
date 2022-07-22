@@ -1,0 +1,4 @@
+{{ $style := resources.Get "css/index.scss" | toCSS | minify }}
+<style>
+{{ $style.Content | safeCSS }}
+</style>
