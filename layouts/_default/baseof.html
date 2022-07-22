@@ -6,26 +6,29 @@
     <body>
         <main aria-role="main">
             <div class="container" role="main">
-                <div class="container__child">
-                    {{ partial "main/heading" . }}
-                </div>
                 <div class="container__child nav">
                     {{ partial "nav" . }}
+                </div>
+                <div class="container__child">
+                    {{ partial "main/heading" . }}
                 </div>
                 {{ if .IsHome }}
                 <div class="container__child" role="text" aria-label="About Pete">
                     {{- partial "main/byline" . -}}
                 </div>
                 {{ end }}
-                {{ if .Params.showSkills }}
+                <!-- {{ if .Params.showSkills }} -->
                 <div class="container_child" aria-label="Pete's skills">
                     {{ partial "background/skills" . }}
                 </div>
-                {{ end }}
+                <!-- {{ end }} -->
+                {{ if .IsHome }}
                 <div class="container__child content" role="main">
                     {{ block "main" .}}{{ end }}
                 </div>
+                {{ end }}
             </div>
         </main>
+        {{ partial "head/css" }}
     </body>
 </html>
