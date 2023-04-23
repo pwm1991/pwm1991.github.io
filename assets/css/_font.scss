@@ -1,27 +1,25 @@
 $font-size-default: 1em;
 $font-size-xxxl: $font-size-default * 4;
-$font-size-lg: $font-size-default * 1.6;
-$font-size-md: $font-size-default * 1.2;
+$font-size-md: $font-size-default * 1;
 $font-size-sm: $font-size-default * 0.9;
-$font-size-xs: $font-size-default * 0.8;
-$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$font-size-xs: $font-size-default * 0.7;
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 $font-weight-heavy: 900;
 $font-weight-medium: 600;
 
 h3 {
+  font-size: $font-size-default;
   padding-top: $padding-default-sm;
+  padding-bottom: $padding-default-sm / 2;
 }
 
 a {
   color: $link-color;
-  &.icon-link-header {
+  &.no-underline {
     text-decoration: none;
     color: inherit;
-    &::after {
-      font-size: 90%;
-      content: "  🔗"
-    }
   }
 }
 
@@ -30,7 +28,11 @@ p {
     font-weight: bold;
   }
   &.subtitle {
-    font-weight: 400;
+    font-size: $font-size-default;
+    font-family: monospace;
+  }
+  &.skills {
+    font-weight: 300;
     font-size: $font-size-sm;
   }
 }
