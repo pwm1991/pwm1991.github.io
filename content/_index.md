@@ -11,9 +11,8 @@ tags: []
 {{< subtitle text="September 2020 - Present">}}
 
 * Lead on digital analytics and behavioural data engineering.
-* I manage a team of analysts and work with product managers, software engineers, data scientists and other functions to derive behavioural analytics insights
-* Currently building an in-house behavioural data platform for insights and recommender systems on Snowplow BDP.
-* Implemented GTM Server for more resilient tracking.
+* I lead a team of engineers and analysts to develop behavioural data models that help the business understand how its website and apps are doing.s 
+* 
 
 ### {{< icon-link text="Cancer Research UK" link="https://www.cancerresearchuk.org/">}}
 
