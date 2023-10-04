@@ -10,9 +10,12 @@ tags: []
 
 {{< subtitle text="September 2020 - Present">}}
 
-* Lead on digital analytics and behavioural data engineering.
-* I lead a team of engineers and analysts to develop behavioural data models that help the business understand how its website and apps are doing.s 
-* 
+I work at the intersection between product and data engineering on CharlotteTilbury.com and their apps. I lead a team of data engineers and product analysts to build and develop behavioural data models that drive reporting, insight and recommendation systems.
+
+At Charlotte Tilbury I have:
+
+* Built a first-party behavioural data platform, built on Google BigQuery, Dataform, Pub/Sub and Looker.
+* Rolled out off-device tracking across the website and apps, using Google Tag Manager Server and Pub/Sub.
 
 ### {{< icon-link text="Cancer Research UK" link="https://www.cancerresearchuk.org/">}}
 
