@@ -14,8 +14,10 @@ I work at the intersection between product and data engineering on CharlotteTilb
 
 At Charlotte Tilbury I have:
 
-* Built a first-party behavioural data platform, built on Google BigQuery, Dataform, Pub/Sub and Looker.
+* Built a first-party behavioural data platform on Snowplow, Dataform, Pub/Sub and Looker to go beyond Google Analytics.
 * Rolled out off-device tracking across the website and apps, using Google Tag Manager Server and Pub/Sub.
+* Deployed many firsts for the Data team like environments, CI/CD and packages.
+* Led an awesome team for 2 years and counting.
 
 ### {{< icon-link text="Cancer Research UK" link="https://www.cancerresearchuk.org/">}}
 
