@@ -10,21 +10,15 @@ tags: []
 
 {{< subtitle text="September 2020 - Present">}}
 
-I work at the intersection between product and data engineering on CharlotteTilbury.com and their apps. I lead a team of data engineers and product analysts to build and develop behavioural data models that drive reporting, insight and recommendation systems.
+I work on data products at Charlotte Tilbury with a focus on product analytics and martech. I lead a squad of data engineers and product analysts who build data models and deliver insights to a wide range of stakeholders, including product, performance marketing, CRM and customer insights.
 
-At Charlotte Tilbury I have:
-
-* Built a first-party behavioural data platform on Snowplow, Dataform, Pub/Sub and Looker to go beyond Google Analytics.
-* Rolled out off-device tracking across the website and apps, using Google Tag Manager Server and Pub/Sub.
-* Deployed many firsts for the Data team like environments, CI/CD and packages.
-* Led an awesome team for 2 years and counting.
+I led the migration away from Google Analytics to Snowplow, a fully in-house set of data models to measure product performance and customer behaviour.
 
 ### {{< icon-link text="Cancer Research UK" link="https://www.cancerresearchuk.org/">}}
 
 {{< subtitle text="December 2019 - September 2020, Technical Web Analyst">}}
 
-* Implemented OneTrust cookie consent.
-* Spent a lot of time refactoring Google Tag Manager deployments.
+At Cancer Research I refactored their tracking and martech data stack to improve the performance and realibility of their data collection. I also rolled out OneTrust across their digital estate to comply with privacy regulations.
 
 ### {{< icon-link text="The Royal Society" link="https://royalsociety.org">}}
 
