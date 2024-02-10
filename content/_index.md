@@ -1,18 +1,18 @@
 ---
 title: "Pete Martin"
-date: 2021-02-07T20:16:36Z
+date: 2024-02-10T20:16:36Z
 tags: []
 ---
 
 ## Background
 
-### {{< icon-link text="Digital Analytics Lead, Charlotte Tilbury" link="https://www.charlottetilbury.com">}}
+### {{< icon-link text="Digital Analytics Lead, Charlotte Tilbury" link="https://www.charlottetlbury.com">}}
 
 {{< subtitle text="September 2020 - Present">}}
 
 I work on data products at Charlotte Tilbury with a focus on product analytics and martech. I lead a squad of data engineers and product analysts who build data models and deliver insights to a wide range of stakeholders, including product, performance marketing, CRM and customer insights.
 
-I led the migration away from Google Analytics to Snowplow, a fully in-house set of data models to measure product performance and customer behaviour.
+My highlight has been leading the migration away from Google Analytics to Snowplow, a headless open-source analytics platform, to measure product performance and customer behaviour.
 
 ### {{< icon-link text="Cancer Research UK" link="https://www.cancerresearchuk.org/">}}
 
