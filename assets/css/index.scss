@@ -1,12 +1,8 @@
 @import "reset";
-@import "nord";
 @import "color";
 @import "breakpoints";
 @import "font";
 @import "grid";
-@import "gradients";
-// components
-@import "nav";
 @import "blog";
 
 @mixin for-desktop-up {
@@ -37,17 +33,10 @@ p {
 }
 
 main {
-  display: grid;
   width: 100%;
-  // min-height: 100%;
   grid-auto-flow: column;
   align-items: center;
   justify-items: center;
-}
-
-.heading-big {
-  font-size: $font-size-xxxl;
-  display: inline-block;
 }
 
 .padding-sm {

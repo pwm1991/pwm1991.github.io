@@ -1,33 +1,5 @@
-.skills {
-    @extend .content;
-    grid-area: skills;
-    padding: $padding-default;
-    background-color: $nord2;
-    h2, p {
-        color: $nord4;
-    }
-}
-
-.skills-bubbles {
-    list-style: none;
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin-left: -$default-margin;
-    margin-top: $default-margin;
-    div {
-        display: flex;
-        margin: $default-margin;
-        text-align: center;
-        padding: $default-margin $default-margin*1.5;
-        border-radius: 10px;
-        text-align: center;
-    }
-}
-
 .divider {
-    @extend .gradient-1;
+
     height: 2px;
     border-radius: $padding-default;
     margin: $padding-default*3 0;
@@ -71,7 +43,6 @@
     .post__img-caption {
         max-width: 80%;
         padding-left: $padding-default;
-        color: $nord2;
         font-weight: 600;
     }
 }

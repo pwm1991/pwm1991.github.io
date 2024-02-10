@@ -1,15 +1,34 @@
 $font-size-default: 1em;
-$font-size-xxxl: $font-size-default * 4;
+$font-size-xl: $font-size-default * 2;
+$font-size-l: $font-size-default * 1.4;
 $font-size-md: $font-size-default * 1;
 $font-size-sm: $font-size-default * 0.9;
 $font-size-xs: $font-size-default * 0.7;
-$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+$font-family: 'Gill Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
   Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 $font-weight-heavy: 900;
 $font-weight-medium: 600;
+$font-weight-light: 300;
+
+@mixin heading {
+  font-family: 'Times New Roman', Times, serif !important;
+  font-weight: $font-weight-light;
+  font-style: italic;
+}
+
+.heading-big {
+  @include heading;
+  font-size: $font-size-xl;
+}
+
+h2 {
+  @include heading;
+  font-size: $font-size-l;
+}
 
 h3 {
+  @include heading;
   font-size: $font-size-default;
   padding-top: $padding-default-sm;
   padding-bottom: $padding-default-sm / 2;
@@ -31,12 +50,13 @@ p {
     font-size: $font-size-default;
     font-family: monospace;
   }
-  &.skills {
-    font-weight: 300;
-    font-size: $font-size-sm;
-  }
 }
 
 .small {
   font-size: $font-size-xs;
+}
+
+.nav {
+  margin: 0;
+  margin-top: $padding-default-sm;
 }
