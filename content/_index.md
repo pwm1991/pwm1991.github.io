@@ -10,11 +10,11 @@ tags: []
 
 {{< subtitle text="September 2020 - Present">}}
 
-I work on data products at Charlotte Tilbury with a focus on product analytics and martech. I lead a squad of data engineers and product analysts who build data models and deliver insights to a wide range of stakeholders, including product, performance marketing, CRM and customer insights. My squad is also responsible for data collection and privacy across Google Tag Manager (Server), Appsflyer, and off-device measurement.
+I am the data product owner at Charlotte Tilbury with a focus on product analytics and martech. I lead a multi-disciplinary squad of engineers and analysts to define, build and ship data products for a wide variety of stakeholders, including product, performance marketing, CRM and customer insights.
 
 My highlight has been migrating away from Google Analytics to Snowplow, a headless open-source analytics platform, to measure product performance and customer behaviour.
 
-I mainly work on Google Cloud Platform and use BigQuery, Dataform, Looker, Snowplow and Appsflyer.
+I mainly work on Google Cloud Platform and use BigQuery, Dataform (similar to dbt), Looker, Snowplow and Appsflyer.
 
 ### {{% icon-link text="Technical Web Analyst, Cancer Research UK" link="https://www.cancerresearchuk.org/" %}}
 
@@ -22,9 +22,11 @@ I mainly work on Google Cloud Platform and use BigQuery, Dataform, Looker, Snowp
 
 At Cancer Research I refactored their tracking and martech data stack to improve the performance and realibility of their data collection. I also rolled out OneTrust across their digital estate to comply with privacy regulations.
 
-### {{% icon-link text="The Royal Society" link="https://royalsociety.org" %}}
+### {{% icon-link text="Digital Marketing and Analytics Officer, The Royal Society" link="https://royalsociety.org" %}}
 
-{{< subtitle text="2016 - 2019, Digital Marketing and Analytics Officer">}}
+{{< subtitle text="2016 - 2019">}}
+
+A tthe 
 
 * Managed email marketing process and comms grid.
 * Built a mini data warehouse and my first ELT processes to standardise diversity monitoring across the organisation on SQL Server.
