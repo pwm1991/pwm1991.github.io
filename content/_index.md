@@ -26,8 +26,6 @@ At Cancer Research I refactored their tracking and martech data stack to improve
 
 {{< subtitle text="2016 - 2019">}}
 
-A tthe 
-
 * Managed email marketing process and comms grid.
 * Built a mini data warehouse and my first ELT processes to standardise diversity monitoring across the organisation on SQL Server.
 * Managed data collection standardisation and privacy across the business.
