@@ -28,21 +28,13 @@
 
 .post__img {
     padding: $padding-default-sm 0;
-    @include respond-to(medium) {
-        display: grid;
-        grid-template-columns: $padding-default*2 auto $padding-default*2;
-        grid-template-areas: ". container ."; 
-        justify-items: start;
-        .post__img-container {
-            grid-area: container
-        }
-    }
     img {
         margin: 0 auto;
+        border-radius: $padding-default-lg;
     }
     .post__img-caption {
         max-width: 80%;
-        padding-left: $padding-default;
-        font-weight: 600;
+        padding-left: $padding-default-lg;
+        font-size: $font-size-sm;
     }
 }

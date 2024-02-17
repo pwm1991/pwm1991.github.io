@@ -1,20 +1,19 @@
 {{ $img := .Get "img" }}
-{{ $alt := .Get "alt" }}
 {{ $caption := .Get "caption" }}
 
 {{ with .Page.Resources.GetMatch $img }}
-<figure class="post__img">
-    <div class="post__img-container">
-        <img
-            class="img"
-            src="{{ .Permalink }}"
-            alt="{{ $alt }}"
-            loading="lazy"
-            role="presentation"
-        >
-        {{ if $caption }}
-        <p class="small post__img-caption">{{ $caption }}</p>
-        {{ end }}
-    </div>
-</figure>
+  {{ with .Resize "800x webp photo q100 Lanczos" }}
+    <figure class="post__img">
+            <img
+                class="img"
+                src="{{ .RelPermalink }}"
+                alt="{{ $caption }}"
+                role="presentation"
+                width="{{ .Width }}"
+            >
+            {{ if $caption }}
+            <p class="small post__img-caption">{{ $caption | safeHTML }}</p>
+            {{ end }}
+    </figure>
+  {{ end }}
 {{ end }}

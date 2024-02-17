@@ -14,11 +14,9 @@
                     {{- partial "main/byline" . -}}
                 </div>
                 {{ end }}
-                {{ if .IsHome }}
                 <div class="container__child content" role="main">
                     {{ block "main" .}}{{ end }}
                 </div>
-                {{ end }}
             </div>
         </main>
         {{ partial "head/css" }}
