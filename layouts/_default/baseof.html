@@ -10,7 +10,11 @@
                     {{ partial "main/heading" . }}
                 </div>
                 {{ if .IsHome }}
-                <div class="container__child" role="text" aria-label="About Pete">
+                <div
+                    class="container__child"
+                    role="text"
+                    aria-label="About Pete"
+                >
                     {{- partial "main/byline" . -}}
                 </div>
                 {{ end }}

@@ -14,13 +14,13 @@ $grid-border: 1px solid $border-color;
     @include respond-to(large) {
     }
     @include respond-to(medium) {
-      max-width: 750px;
+        max-width: 750px;
     }
     @include respond-to(small) {
-      max-width: 650px;
-      padding: 0%;
-      padding-top: 8%;
-      padding-left: 8%;
+        max-width: 650px;
+        padding: 0%;
+        padding-top: 8%;
+        padding-left: 8%;
     }
     .container__child {
         padding: $padding-default;

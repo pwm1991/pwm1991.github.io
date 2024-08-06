@@ -1,11 +1,7 @@
 {{ define "main" }}
 <div>
-    {{ if .Parent.IsSection }}
-        {{ partial "post/heading" . }}
-    {{ else }}
-        <h2 role="heading">{{ .Title }}</h2>
-    {{ end }}
-
-    {{.Content}}
+    {{ if .Parent.IsSection }} {{ partial "post/heading" . }} {{ else }}
+    <h2 role="heading">{{ .Title }}</h2>
+    {{ end }} {{.Content}}
 </div>
 {{- end -}}

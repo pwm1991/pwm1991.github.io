@@ -1,5 +1,5 @@
 ---
-title: "Olive the Miniature Poodle"
+title: 'Olive the Miniature Poodle'
 date: 2024-02-10T20:16:36Z
 tags: []
 ---

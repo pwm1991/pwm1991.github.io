@@ -1,44 +1,53 @@
-@import "reset";
-@import "color";
-@import "breakpoints";
-@import "font";
-@import "grid";
-@import "blog";
+@import 'reset';
+@import 'color';
+@import 'breakpoints';
+@import 'font';
+@import 'grid';
+@import 'blog';
 
 @mixin for-desktop-up {
-  @media (min-width: 1000px) { @content; }
+    @media (min-width: 1000px) {
+        @content;
+    }
 }
 
-html,body,h1,h2,h3,h4,p {
-  font-family: $font-family;
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: $font-family;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: $font-family;
-  font-size: $font-size-default;
-  color: $font-color;
-  background-color: $background-color;
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: $font-family;
+    font-size: $font-size-default;
+    color: $font-color;
+    background-color: $background-color;
 }
 
 p {
-  &:first-child {
-    margin-top: 0;
-    padding-top: 0;
-  }
-  padding-top: $padding-default-sm;
+    &:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    padding-top: $padding-default-sm;
 }
 
 main {
-  width: 100%;
-  grid-auto-flow: column;
-  align-items: center;
-  justify-items: center;
+    width: 100%;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
 }
 
 .padding-sm {
-  padding: $padding-default;
+    padding: $padding-default;
 }

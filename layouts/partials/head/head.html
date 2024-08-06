@@ -1,34 +1,36 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <title>
-    {{- block "title" . -}}
-        {{ if not .IsHome }}
-            {{- .Title }} - 
-        {{ end }}
-        {{ .Site.Title -}}
-    {{ end }}
+    {{- block "title" . -}} {{ if not .IsHome }} {{- .Title }} - {{ end }} {{
+    .Site.Title -}} {{ end }}
 </title>
 
-<meta name="description" content="Pete Martin's website">
-<meta name="robots" content="index,follow">
-<meta name="googlebot" content="index,follow">
-<meta name="google" content="nositelinkssearchbox">
-<meta name="google" content="notranslate">
-<meta name="twitter:dnt" content="on">
+<meta name="description" content="Pete Martin's website" />
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+<meta name="google" content="nositelinkssearchbox" />
+<meta name="google" content="notranslate" />
+<meta name="twitter:dnt" content="on" />
 
 {{ hugo.Generator }}
 
-<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}{{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{ end }}">
-<meta name="author" content="Pete Martin">
-
+<meta
+    name="description"
+    content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}{{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{ end }}"
+/>
+<meta name="author" content="Pete Martin" />
 
 {{ if hugo.IsProduction }}
-<script async   
-    src="https://www.googletagmanager.com/gtag/js?id=G-WD310MPEEC"></script>
+<script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WD310MPEEC"
+></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag() {
+        dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-WD310MPEEC');
@@ -37,6 +39,5 @@
 
 <!-- {{ $style := resources.Get "css/index.scss" | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}"> -->
-
 
 {{ partial "head/schema" . }}

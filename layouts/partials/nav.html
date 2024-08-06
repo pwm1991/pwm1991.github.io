@@ -1,8 +1,22 @@
 {{ $currentPage := . }}
 <ul class="nav" role="navigation" aria-label="Navigation">
-{{ range .Site.Menus.nav }}
+    {{ range .Site.Menus.nav }}
     <li>
-        <a href="{{ .URL }}" title="{{ .Title }}" {{ if eq .Page nil }}rel="nooopener noreferrer" target="_blank"{{ end }}>{{ .Name }}</a>
+        <a
+            href="{{ .URL }}"
+            title="{{ .Title }}"
+            {{
+            if
+            eq
+            .Page
+            nil
+            }}rel="nooopener noreferrer"
+            target="_blank"
+            {{
+            end
+            }}
+            >{{ .Name }}</a
+        >
     </li>
     {{ end }}
 </ul>
