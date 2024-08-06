@@ -10,7 +10,7 @@ tags: []
 
 {{< subtitle text="August 2024 - Present">}}
 
-### {{% icon-link text="Digital Analytics Lead, Charlotte Tilbury" link="https://www.charlottetlbury.com" %}}
+### {{% icon-link text="Digital Analytics Lead, Charlotte Tilbury" link="https://www.charlottetilbury.com" %}}
 
 {{< subtitle text="September 2020 - July 2024">}}
 
