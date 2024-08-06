@@ -20,3 +20,6 @@ paginatePath = "blog"
   [[menu.nav]]
     name = "LinkedIn"
     url = "https://www.linkedin.com/in/pwm1991"
+  [[menu.nav]]
+    name = "Github"
+    url = "https://www.github.com/pwm1991"

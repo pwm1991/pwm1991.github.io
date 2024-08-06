@@ -30,7 +30,7 @@ h2 {
 h3 {
   @include heading;
   font-size: $font-size-default;
-  padding-top: $padding-default-sm;
+  padding-top: $padding-default-md;
   padding-bottom: $padding-default-sm / 2;
 }
 
@@ -39,6 +39,10 @@ a {
   &.no-underline {
     text-decoration: none;
     color: inherit;
+  }
+
+  &.link-ico {
+    padding-left: $font-size-default / 2;
   }
 }
 
