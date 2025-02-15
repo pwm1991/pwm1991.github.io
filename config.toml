@@ -6,8 +6,10 @@ description = "Pete Martin's homepage"
 enableRobotsTXT = true
 document_title = "Pete Martin"
 publishDir = "docs"
-paginate = 6
-paginatePath = "blog"
+[pagination]
+  pagerSize = 6
+  paginatePath = "blog"
+disableKinds = ["taxonomy","taxonomyTerm","sitemap"]
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
