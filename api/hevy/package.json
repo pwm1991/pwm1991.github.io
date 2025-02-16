@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "run": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "hevy",

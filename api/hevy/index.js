@@ -8,15 +8,9 @@
  */
 
 require('dotenv').config();
-const pino = require('pino');
 
-const log = pino({
-    level: process.env.PINO_LOG_LEVEL || 'debug',
-    timestamp: pino.stdTimeFunctions.isoTime,
-    redact: {
-        paths: ['email', 'HEVY_KEY'],
-    },
-});
+const log = require('./src/logger');
+const { parseWorkouts } = require('./src/parseWorkouts');
 
 const BASE_URL = 'https://api.hevyapp.com/v1',
     ENDPOINT = '/workouts/events',
@@ -33,20 +27,25 @@ const getWorkouts = async () => {
         accept: 'application/json',
         'api-key': process.env.HEVY_KEY,
     };
-    const urlProperties = `page=1&pageSize=10&since=${KNOWLEDGE}`;
+    const hevyPageLimit = process.env.HEVY_PAGE_LIMIT || 1;
+    const urlProperties = `page=1&pageSize=${hevyPageLimit}&since=${KNOWLEDGE}`;
     const url = `${BASE_URL}${ENDPOINT}?${urlProperties}`;
     log.debug(url);
     try {
         const response = await fetch(url, { headers });
         const data = await response.json();
 
-        log.debug(data.events);
-
-        return data;
+        return data.events;
     } catch (e) {
         error(e);
         process.exit(1);
     }
 };
 
-getWorkouts();
+const run = async () => {
+    const workouts = await getWorkouts();
+    const parsedWorkouts = await parseWorkouts(workouts);
+    log.info(parsedWorkouts);
+};
+
+run();

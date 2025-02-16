@@ -1,13 +1,5 @@
+const log = require('../logger');
 const { parseSets, POUNDS_TO_KG } = require('./index');
-const pino = require('pino');
-
-const log = pino({
-    level: process.env.PINO_LOG_LEVEL || 'debug',
-    timestamp: pino.stdTimeFunctions.isoTime,
-    redact: {
-        paths: ['email', 'HEVY_KEY'],
-    },
-});
 
 const exampleSetInKg = [
     {
