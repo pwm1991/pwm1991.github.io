@@ -11,5 +11,5 @@ const options = pretty({
     },
 });
 const log = pino(options);
-log.info(`Logger initialized, level: ${logLevelw}`);
+log.info(`Logger initialized, level: ${logLevel}`);
 module.exports = log;
