@@ -5,16 +5,8 @@
         <a
             href="{{ .URL }}"
             title="{{ .Title }}"
-            {{
-            if
-            eq
-            .Page
-            nil
-            }}rel="nooopener noreferrer"
-            target="_blank"
-            {{
-            end
-            }}
+            {{ if eq .Page nil }}rel="nooopener noreferrer" target="_blank"
+            {{ end }}
             >{{ .Name }}</a
         >
     </li>
