@@ -4,7 +4,9 @@
   "description": "Gets hevy workouts and makes blog posts",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "run": "node index.js"
   },
   "keywords": [
     "hevy",
@@ -14,6 +16,10 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.7",
+    "jest": "^29.7.0",
     "pino": "^9.6.0"
+  },
+  "devDependencies": {
+    "pino-pretty": "^13.0.0"
   }
 }
