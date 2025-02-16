@@ -4,6 +4,7 @@
 @import 'font';
 @import 'grid';
 @import 'blog';
+@import 'nav';
 
 @mixin for-desktop-up {
     @media (min-width: 1000px) {

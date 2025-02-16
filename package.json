@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "hugo",
-    "dev": "hugo server",
+    "dev": "hugo server -O",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
