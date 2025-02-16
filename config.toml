@@ -5,7 +5,7 @@ title = "Pete Martin"
 description = "Pete Martin's homepage"
 enableRobotsTXT = true
 document_title = "Pete Martin"
-publishDir = "docs"
+publishDir = "build"
 [pagination]
   pagerSize = 6
   paginatePath = "blog"
