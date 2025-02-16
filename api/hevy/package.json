@@ -1,0 +1,19 @@
+{
+  "name": "hevy-getter",
+  "version": "1.0.0",
+  "description": "Gets hevy workouts and makes blog posts",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "hevy",
+    "api"
+  ],
+  "author": "pwm1991",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "pino": "^9.6.0"
+  }
+}
