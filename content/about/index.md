@@ -1,10 +1,12 @@
 ---
-title: 'Pete Martin'
+# title: 'Pete Martin'
 date: 2024-02-10T20:16:36Z
 tags: []
 ---
 
-## Background
+I'm an engineering manager in the data domain, with a focus on behavioural data, tracking, and privacy. I like leading and developing engineering teams to solve user problems.
+
+Back in the day, I worked in elections on both sides of the pond, raised a tonne of money for my favourite political party, and done my share of (crisis) comms, marketing and engineering-adjacent teams.
 
 ### {{% icon-link text="Analytics Engineering Lead, Depop" link="https://www.depop.com" %}}
 

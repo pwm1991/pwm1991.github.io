@@ -17,11 +17,16 @@ disableKinds = ["taxonomy","taxonomyTerm","sitemap"]
       unsafe = true
 [menu]
   [[menu.nav]]
-    name = "Email me"
+    name = "About"
+    url = "/about"
+  [[menu.nav]]
+    name = "Email"
     url = "mailto:pete@pwm1991.com"
   [[menu.nav]]
     name = "LinkedIn"
     url = "https://www.linkedin.com/in/pwm1991"
+    icon = true
   [[menu.nav]]
     name = "Github"
     url = "https://www.github.com/pwm1991"
+    icon = true
