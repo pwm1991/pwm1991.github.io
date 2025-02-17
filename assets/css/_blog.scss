@@ -1,7 +1,12 @@
 .divider {
     height: 2px;
-    border-radius: $padding-default;
-    margin: $padding-default * 1 0;
+    border-bottom: 1px solid $border-color;
+    padding: $padding-default * 1;
+}
+
+.blog__content {
+  margin-top: $padding-default;
+  margin-bottom: $padding-default;
 }
 
 .section__list {
@@ -29,7 +34,7 @@
     padding: $padding-default-sm 0;
     img {
         margin: 0 auto;
-        border-radius: $padding-default-lg;
+        border-radius: $padding-default-sm;
     }
     .post__img-caption {
         max-width: 80%;

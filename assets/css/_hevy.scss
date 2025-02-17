@@ -1,0 +1,17 @@
+.hevy-action {
+  border: 1px solid black;
+  border-radius: $padding-default-sm;
+  padding: $padding-default-sm;
+
+  h2 {
+    padding-left: $padding-default-sm / 2;
+  }
+}
+
+.hevy-list {
+  li {
+    border: 1px solid black;
+    border-radius: $padding-default-sm;
+    padding: $padding-default-sm / 2 $padding-default-sm;
+  }
+}

@@ -1,7 +1,7 @@
 {{ $currentPage := . }}
-<ul class="nav" role="navigation" aria-label="Navigation">
+<ul class="list-grid" role="navigation" aria-label="Navigation">
     {{ range .Site.Menus.nav }}
-    <li class="nav-item">
+    <li class="list-grid-item">
         <a
             href="{{ .URL }}"
             title="{{ .Title }}"
