@@ -3,4 +3,5 @@ module.exports = {
     singleQuote: true,
     useTabs: false,
     singleAttributePerLine: false,
+    plugins: ['prettier-plugin-jinja-template'],
 };
