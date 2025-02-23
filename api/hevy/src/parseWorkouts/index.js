@@ -2,12 +2,28 @@ const log = require('../logger');
 
 const { parseSets } = require('../parseSets');
 
+const formatWeightToString = (weight) => {
+    return weight.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + 'kg';
+};
+const formatDurationToString = (duration) => {
+    return duration.toString() + ' min';
+};
+
+const parseDuration = (start_time, end_time) => {
+    log.info('Parsing durations');
+    const start = new Date(start_time);
+    const end = new Date(end_time);
+    log.info([start, end]);
+    const duration = (end - start) / 60000;
+    return Math.round(duration);
+};
+
 const parseWorkouts = (workouts) => {
     if (!workouts) {
         throw new Error('No workouts found');
     }
     const parsedWorkouts = workouts.map((event) => {
-        const { id, title, start_time, exercises } = event.workout;
+        const { id, title, start_time, end_time, exercises } = event.workout;
         if (exercises.length === 0) {
             return null;
         }
@@ -22,11 +38,14 @@ const parseWorkouts = (workouts) => {
         totalWeightInKg = sets.reduce((acc, set) => {
             return acc + set.setsTotalWeight;
         }, 0);
+        const duration = parseDuration(start_time, end_time);
         return {
             id,
             title,
             start_time,
-            totalWeightInKg: totalWeightInKg || 0,
+            end_time,
+            totalWeightInKg: formatWeightToString(totalWeightInKg) || '? kg',
+            duration: formatDurationToString(duration) || '? min',
         };
     });
     log.debug(parsedWorkouts);
