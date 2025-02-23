@@ -1,5 +1,6 @@
-.hevy-action {
-    border: 1px solid black;
+.content__hevy-wrapper {
+    @include hevy-gradient;
+    @include drop-shadow-basic;
     border-radius: $padding-default-sm;
     padding: $padding-default-sm;
 
@@ -9,9 +10,22 @@
 }
 
 .hevy-list {
-    li {
-        border: 1px solid black;
+    .hevy-detail {
         border-radius: $padding-default-sm;
         padding: $padding-default-sm / 2 $padding-default-sm;
+
+        // vertical grid
+        display: grid;
+        // stack contents
+        grid-template-columns: 1fr;
+
+        .hevy-label {
+          font-size: $font-size-xs;
+          font-weight: lighter;
+        }
+        .hevy-metric {
+          font-size: $font-size-sm;
+          color: $font-color-dark;
+        }
     }
 }

@@ -1,0 +1,7 @@
+<article class="list-item content__list-content">
+  <div class="list__meta">
+    <h2 id="{{ .Title }}"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ partial "time" .Date }}
+  </div>
+    {{ .Summary }}
+</article>

@@ -4,9 +4,25 @@
     padding: $padding-default * 1;
 }
 
-.blog__content {
-    margin-top: $padding-default;
-    margin-bottom: $padding-default;
+@mixin inline-copy {
+  width: $seven-eighth;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.content__list-content {
+    p {
+        @include inline-copy;
+    }
+}
+
+.list__meta {
+  @include inline-copy;
+}
+
+.list-item {
+  margin-top: $padding-default;
+  margin-bottom: $padding-default;
 }
 
 .section__list {
@@ -36,9 +52,8 @@
         margin: 0 auto;
         border-radius: $padding-default-sm;
     }
-    .post__img-caption {
-        max-width: 80%;
-        padding-left: $padding-default-lg;
+    .caption {
+        @include inline-copy;
         font-size: $font-size-sm;
     }
 }

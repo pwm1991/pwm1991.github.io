@@ -10,7 +10,7 @@
         width="{{ .Width }}"
     />
     {{ if $caption }}
-    <p class="small post__img-caption">{{ $caption | safeHTML }}</p>
+    <figcaption class="small caption">{{ $caption | safeHTML }}</figcaption>
     {{ end }}
 </figure>
 {{ end }} {{ end }}

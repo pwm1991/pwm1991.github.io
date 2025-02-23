@@ -1,0 +1,25 @@
+<article class="list-item content__hevy-wrapper">
+  <h2>
+    {{ .Title }}
+  </h2>
+
+  <ul class="list-item hevy-list list-grid">
+    <li class="list-grid-item hevy-detail">
+      <span class="hevy-metric">{{ partial "time" .Date }}</span>
+      <span class="hevy-label">Date</span>
+      </li>
+      {{ if .Params.duration }}
+
+      <li class="list-grid-item hevy-detail">
+        <span class="hevy-metric">{{ .Params.duration }}</span>
+        <span class="hevy-label">Duration</span>
+        </li>
+      {{ end }}
+      {{ if .Params.totalWeightInKg }}
+      <li class="list-grid-item hevy-detail">
+        <span class="hevy-metric">{{ .Params.totalWeightInKg }}</span>
+        <span class="hevy-label">Volume</span>
+      </li>
+      {{ end }}
+  </ul>
+</article>

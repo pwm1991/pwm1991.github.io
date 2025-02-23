@@ -2,27 +2,9 @@
  {{ $pages := sort $pages "Date" "desc" }}
  {{ range $index, $page := $pages }}
   {{ if eq .Section "blog" }}
-      <article class="blog__content">
-        <h2 id="{{ .Title }}"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <div class="blog__meta">
-          {{ partial "time" .Date }}
-        </div>
-          {{ .Summary }}
-      </article>
-  {{ else }}
-      <article class="blog__content hevy-action">
-        <h2>
-          {{ .Title }}
-        </h2>
-
-        <ul class="hevy-list list-grid">
-          <li class="list-grid-item">{{ partial "time" .Date }}</li>
-          <li class="list-grid-item">{{ .Params.totalWeightInKg }} </li>
-        </ul>
-      </article>
-      <p>via Hevy API</p>
+      {{ partial "list_item/post" . }}
+  {{ else if eq .Section "hevy" }}
+      {{ partial "list_item/hevy" . }}
   {{ end }}
-  <div class="divider"></div>
-
-
+  <!-- <div class="divider"></div> -->
 {{ end }}
