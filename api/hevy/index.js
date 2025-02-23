@@ -1,16 +1,8 @@
-/**
- * Authenticate
- * Get latest hevy workouts
- * Use a high-watermark
- * For each new one
- * Get the date / type / total weight / goals
- *
- */
-
 require('dotenv').config();
 
 const log = require('./src/logger');
 const { parseWorkouts } = require('./src/parseWorkouts');
+const { appendWorkOutToFile } = require('./src/writeWorkouts');
 
 const BASE_URL = 'https://api.hevyapp.com/v1',
     ENDPOINT = '/workouts/events',
@@ -46,6 +38,7 @@ const run = async () => {
     const workouts = await getWorkouts();
     const parsedWorkouts = await parseWorkouts(workouts);
     log.info(parsedWorkouts);
+    await appendWorkOutToFile(parsedWorkouts);
 };
 
 run();
