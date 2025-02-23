@@ -1,17 +1,17 @@
 .list-grid {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 0.5rem;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 
-  &.list-align-center {
-    justify-items: center;
-  }
+    &.list-align-center {
+        justify-items: center;
+    }
 }
 
 .list-grid-item {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }

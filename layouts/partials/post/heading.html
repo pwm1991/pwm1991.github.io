@@ -3,9 +3,7 @@
         {{ range (.GetTerms "tags") }} {{ .LinkTitle }} {{ end }}
     </div>
     <div>
-      <h2>
-        {{ .Title }}
-      </h2>
+        <h2>{{ .Title }}</h2>
     </div>
     {{ partial "time" .Date }}
 </div>

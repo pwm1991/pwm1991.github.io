@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
     <head>
         {{ partial "head/head" . }}
@@ -7,8 +7,7 @@
         <main aria-role="main">
             <div class="container" role="main">
                 <div class="container__child">
-                    {{ partial "nav" . }}
-                    {{ partial "main/heading" . }}
+                    {{ partial "nav" . }} {{ partial "main/heading" . }}
                 </div>
                 {{ if .IsHome }}
                 <div
@@ -17,12 +16,10 @@
                     aria-label="About Pete"
                 >
                     {{- partial "main/byline" . -}}
-                  </div>
-                  {{ end }}
-                  {{ if .IsHome }}
-                  <div class="divider"></div>
-                  {{- partial "section/content" . -}}
-                  {{ end }}
+                </div>
+                {{ end }} {{ if .IsHome }}
+                <div class="divider"></div>
+                {{- partial "section/content" . -}} {{ end }}
                 <div class="container__child content" role="main">
                     {{ block "main" .}}{{ end }}
                 </div>

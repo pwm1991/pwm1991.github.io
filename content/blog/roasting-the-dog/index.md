@@ -3,6 +3,7 @@ title: 'LLM Roasts'
 date: 2025-02-14T19:16:36Z
 tags: []
 ---
+
 Every so often I feed the machines by throwing pictures of Olive into them and seeing what comes out. Here are some of the results.
 
 {{< post-image img="olive1.jpg" caption="DeepSeek R1">}}

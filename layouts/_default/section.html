@@ -4,7 +4,7 @@
     {{ range $paginator.Pages }}
     <article class="list__list-item">
         {{ partial "post/heading" . }}
-        <div class="list__content">{{.Content}}</div>
+        <div class="list__content">{{ .post }}</div>
         {{ partial "post/divider" .}}
     </article>
     {{ end }}
