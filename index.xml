@@ -1,6 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pete Martin</title><link>https://www.pwm1991.com/</link><description>Recent content on Pete Martin</description><generator>Hugo</generator><language>en-GB</language><lastBuildDate>Sat, 10 Feb 2024 20:16:36 +0000</lastBuildDate><atom:link href="https://www.pwm1991.com/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://www.pwm1991.com/about/</link><pubDate>Sat, 10 Feb 2024 20:16:36 +0000</pubDate><guid>https://www.pwm1991.com/about/</guid><description>&lt;p>I&amp;rsquo;m an engineering manager in the data domain, with a focus on behavioural data, tracking, and privacy. I like leading and developing engineering teams to solve user problems.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pete Martin</title><link>https://www.pwm1991.com/</link><description>Recent content on Pete Martin</description><generator>Hugo</generator><language>en-GB</language><lastBuildDate>Sat, 15 Feb 2025 14:39:31 +0000</lastBuildDate><atom:link href="https://www.pwm1991.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Workout: Pull</title><link>https://www.pwm1991.com/hevy/d64ffade-0de4-4fa7-a389-282c262203e0/</link><pubDate>Sat, 15 Feb 2025 14:39:31 +0000</pubDate><guid>https://www.pwm1991.com/hevy/d64ffade-0de4-4fa7-a389-282c262203e0/</guid><description/></item><item><title>LLM Roasts</title><link>https://www.pwm1991.com/blog/roasting-the-dog/</link><pubDate>Fri, 14 Feb 2025 19:16:36 +0000</pubDate><guid>https://www.pwm1991.com/blog/roasting-the-dog/</guid><description>&lt;p>Every so often I feed the machines by throwing pictures of Olive into them and seeing what comes out. Here are some of the results.&lt;/p>
+ 
+
+&lt;p>Claude 3.5 Sonnet is my preferred LLM at the moment (i.e. the one I pay for) but struggles with decent roasts that are punchy&lt;/p>
+ 
+&lt;figure class="post__img">
+ &lt;img
+ class="img"
+ src="https://www.pwm1991.com/blog/roasting-the-dog/claude-3-5-concise_hu_323c95c763dd58e6.webp"
+ alt="Claude 3.5 Sonnet"
+ role="presentation"
+ width="800"
+ />
+ 
+ &lt;figcaption class="small caption">Claude 3.5 Sonnet&lt;/figcaption>
+ 
+&lt;/figure>
+ 
+
+&lt;p>ChatGPT has done pretty well over the last year to roast Olive, with decent image parsing and getting some of Olive&amp;rsquo;s expressions out into the roast.&lt;/p></description></item><item><title>About</title><link>https://www.pwm1991.com/about/</link><pubDate>Sat, 10 Feb 2024 20:16:36 +0000</pubDate><guid>https://www.pwm1991.com/about/</guid><description>&lt;p>I&amp;rsquo;m an engineering manager in the data domain, with a focus on behavioural data, tracking, and privacy. I like leading and developing engineering teams to solve user problems.&lt;/p>
 &lt;p>Back in the day, I worked in elections on both sides of the pond, raised a tonne of money for my favourite political party, and done my share of (crisis) comms, marketing and engineering-adjacent teams.&lt;/p>
-&lt;h3 id="span-classicon-link-headeranalytics-engineering-lead-depopspana-classno-underline-link-ico-hrefhttpswwwdepopcom-target_blanka">&lt;span class="icon-link-header">Analytics Engineering Lead, Depop&lt;/span>&lt;a class="no-underline link-ico" href="https://www.depop.com" target="_blank">🔗&lt;/a>&lt;/h3>
+&lt;h3 id="analytics-engineering-lead-depop">&lt;span class="icon-link-header">Analytics Engineering Lead, Depop&lt;/span>&lt;/h3>
+&lt;p>&lt;a class="no-underline link-ico" href="https://www.depop.com" target="_blank">🔗&lt;/a>&lt;/p>
 &lt;p class="subtitle">August 2024 - Present&lt;/p></description></item><item><title>Olive the Miniature Poodle</title><link>https://www.pwm1991.com/blog/olive/</link><pubDate>Sat, 10 Feb 2024 20:16:36 +0000</pubDate><guid>https://www.pwm1991.com/blog/olive/</guid><description>&lt;p>Olive is 3 years old and bit too smart for her own good. When she comes into the office she typically wanders around saying hello to people and tries to get into lifts.&lt;/p>
 &lt;p> 
 &lt;figure class="post__img">
@@ -12,7 +32,7 @@
  width="800"
  />
  
- &lt;p class="small post__img-caption">Olive, Reggie and Cooper&lt;/p>
+ &lt;figcaption class="small caption">Olive, Reggie and Cooper&lt;/figcaption>
  
 &lt;/figure>
  
@@ -27,7 +47,7 @@
  width="800"
  />
  
- &lt;p class="small post__img-caption">Taking Olive to the allotment usually means coming back filfty&lt;/p>
+ &lt;figcaption class="small caption">Taking Olive to the allotment usually means coming back filfty&lt;/figcaption>
  
 &lt;/figure>
  
@@ -42,7 +62,7 @@
  width="800"
  />
  
- &lt;p class="small post__img-caption">Olive at the beach&lt;/p>
+ &lt;figcaption class="small caption">Olive at the beach&lt;/figcaption>
  
 &lt;/figure>
  

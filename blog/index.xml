@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Pete Martin</title><link>https://www.pwm1991.com/blog/</link><description>Recent content in Blogs on Pete Martin</description><generator>Hugo</generator><language>en-GB</language><lastBuildDate>Sat, 10 Feb 2024 20:16:36 +0000</lastBuildDate><atom:link href="https://www.pwm1991.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Olive the Miniature Poodle</title><link>https://www.pwm1991.com/blog/olive/</link><pubDate>Sat, 10 Feb 2024 20:16:36 +0000</pubDate><guid>https://www.pwm1991.com/blog/olive/</guid><description>&lt;p>Olive is 3 years old and bit too smart for her own good. When she comes into the office she typically wanders around saying hello to people and tries to get into lifts.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Pete Martin</title><link>https://www.pwm1991.com/blog/</link><description>Recent content in Blogs on Pete Martin</description><generator>Hugo</generator><language>en-GB</language><lastBuildDate>Fri, 14 Feb 2025 19:16:36 +0000</lastBuildDate><atom:link href="https://www.pwm1991.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>LLM Roasts</title><link>https://www.pwm1991.com/blog/roasting-the-dog/</link><pubDate>Fri, 14 Feb 2025 19:16:36 +0000</pubDate><guid>https://www.pwm1991.com/blog/roasting-the-dog/</guid><description>&lt;p>Every so often I feed the machines by throwing pictures of Olive into them and seeing what comes out. Here are some of the results.&lt;/p>
+ 
+
+&lt;p>Claude 3.5 Sonnet is my preferred LLM at the moment (i.e. the one I pay for) but struggles with decent roasts that are punchy&lt;/p>
+ 
+&lt;figure class="post__img">
+ &lt;img
+ class="img"
+ src="https://www.pwm1991.com/blog/roasting-the-dog/claude-3-5-concise_hu_323c95c763dd58e6.webp"
+ alt="Claude 3.5 Sonnet"
+ role="presentation"
+ width="800"
+ />
+ 
+ &lt;figcaption class="small caption">Claude 3.5 Sonnet&lt;/figcaption>
+ 
+&lt;/figure>
+ 
+
+&lt;p>ChatGPT has done pretty well over the last year to roast Olive, with decent image parsing and getting some of Olive&amp;rsquo;s expressions out into the roast.&lt;/p></description></item><item><title>Olive the Miniature Poodle</title><link>https://www.pwm1991.com/blog/olive/</link><pubDate>Sat, 10 Feb 2024 20:16:36 +0000</pubDate><guid>https://www.pwm1991.com/blog/olive/</guid><description>&lt;p>Olive is 3 years old and bit too smart for her own good. When she comes into the office she typically wanders around saying hello to people and tries to get into lifts.&lt;/p>
 &lt;p> 
 &lt;figure class="post__img">
  &lt;img
@@ -9,7 +28,7 @@
  width="800"
  />
  
- &lt;p class="small post__img-caption">Olive, Reggie and Cooper&lt;/p>
+ &lt;figcaption class="small caption">Olive, Reggie and Cooper&lt;/figcaption>
  
 &lt;/figure>
  
@@ -24,7 +43,7 @@
  width="800"
  />
  
- &lt;p class="small post__img-caption">Taking Olive to the allotment usually means coming back filfty&lt;/p>
+ &lt;figcaption class="small caption">Taking Olive to the allotment usually means coming back filfty&lt;/figcaption>
  
 &lt;/figure>
  
@@ -39,7 +58,7 @@
  width="800"
  />
  
- &lt;p class="small post__img-caption">Olive at the beach&lt;/p>
+ &lt;figcaption class="small caption">Olive at the beach&lt;/figcaption>
  
 &lt;/figure>
  
