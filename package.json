@@ -27,7 +27,10 @@
         "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-prettier": "^5.2.3",
         "globals": "^15.15.0",
-        "prettier": "^3.5.2",
+        "prettier": "3.5.3",
         "prettier-plugin-jinja-template": "^2.0.0"
+    },
+    "dependencies": {
+        "prettier-eslint": "^16.4.1"
     }
 }

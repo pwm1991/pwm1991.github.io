@@ -1,5 +1,6 @@
 .list-grid {
-    display: grid;
+    display: flex;
+    justify-content: flex-end;
     grid-auto-flow: column;
     grid-gap: 0.5rem;
     padding: 0;
@@ -12,6 +13,11 @@
 }
 
 .list-grid-item {
+    display: flex;
     margin: 0;
     padding: 0;
+
+    &.nav-text:last-of-type {
+      font-weight: bold;
+  }
 }

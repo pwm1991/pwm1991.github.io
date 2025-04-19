@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main>
+  <ul>
+    {{ $pages := sort .Pages "Date" "desc" }}
+    {{ range $pages }}
+      {{ partial "list_item/workouts" . }}
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

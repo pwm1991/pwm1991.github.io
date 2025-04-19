@@ -16,17 +16,25 @@ disableKinds = ["taxonomy","taxonomyTerm","sitemap"]
     [markup.goldmark.renderer]
       unsafe = true
 [menu]
-  [[menu.nav]]
+  [[menu.main]]
     name = "About"
     url = "/about"
+  [[menu.main]]
+    name = "Workouts"
+    url = "/workouts"
+  [[menu.icons]]
   [[menu.nav]]
     name = "Email"
     url = "mailto:pete@pwm1991.com"
+    [menu.nav.params]
+      icon = "mail"
   [[menu.nav]]
     name = "LinkedIn"
     url = "https://www.linkedin.com/in/pwm1991"
-    icon = true
+    [menu.nav.params]
+      icon = "linkedin"
   [[menu.nav]]
     name = "Github"
     url = "https://www.github.com/pwm1991"
-    icon = true
+    [menu.nav.params]
+      icon = "github"

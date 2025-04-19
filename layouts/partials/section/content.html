@@ -1,10 +1,7 @@
-{{ $pages := union (where .Site.RegularPages "Section" "blog") (where .Site.RegularPages "Section" "hevy" ) }}
+{{ $pages := where .Site.RegularPages "Section" "blog" }}
  {{ $pages := sort $pages "Date" "desc" }}
  {{ range $index, $page := $pages }}
   {{ if eq .Section "blog" }}
       {{ partial "list_item/post" . }}
-  {{ else if eq .Section "hevy" }}
-      {{ partial "list_item/hevy" . }}
   {{ end }}
-  <!-- <div class="divider"></div> -->
 {{ end }}
