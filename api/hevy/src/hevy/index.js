@@ -23,32 +23,30 @@ const getWorkouts = async () => {
     log.info('Fetching workouts from Hevy API');
     const { lastWorkout } = await checkFileStore();
 
-    let pageNumber = 1;
-    const hevyPageLimit = process.env.HEVY_PAGE_LIMIT || 1;
-    let urlProperties = `page=${pageNumber}&pageSize=${hevyPageLimit}&since=${lastWorkout}`;
     try {
+        let pageNumber = 1;
+        const hevyPageLimit = process.env.HEVY_PAGE_LIMIT || 10;
+        let urlProperties = `page=${pageNumber}&pageSize=${hevyPageLimit}&since=${lastWorkout}`;
         let hevyResponse = await callHevy(urlProperties);
         const workouts = [];
-        if (hevyResponse.page_count > 1) {
-            workouts.push(...hevyResponse.events);
-            log.info(
-                `More than one page of workouts found. Fetching all pages.`,
-            );
-            pagination = hevyResponse.page_count;
-            for (let i = 2; i <= pagination; i++) {
-                pageNumber = i;
+        workouts.push(...hevyResponse.events);
+
+        const firstResponseTotalPages = hevyResponse.page_count;
+        if (firstResponseTotalPages > 1) {
+            for (let i = 2; i <= firstResponseTotalPages; i++) {
+                log.info(`Fetching page ${i} of ${firstResponseTotalPages}`);
+                urlProperties = `page=${i}&pageSize=${hevyPageLimit}&since=${lastWorkout}`;
                 hevyResponse = await callHevy(urlProperties);
                 workouts.push(...hevyResponse.events);
+                log.info(`Total workouts ${workouts.length}`);
             }
         }
 
+        log.info(`Total workouts parsed: ${workouts.length}`);
         return workouts;
     } catch (e) {
         error(e);
         process.exit(1);
     }
 };
-
-module.exports = {
-    getWorkouts,
-};
+module.exports = { getWorkouts };

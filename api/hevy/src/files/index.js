@@ -15,8 +15,8 @@ const checkFileStore = async () => {
         log.error(`File store not found at ${FILE_STORE}`);
         return {
             exists: false,
-            firstWorkout: '2025-01-01T00:00:00.000Z',
-            lastWorkout: '2025-01-01T00:00:00.000Z',
+            firstWorkout: process.env.START_DATE,
+            lastWorkout: process.env.START_DATE,
         };
     }
     const fileContent = await fs.readFile(FILE_STORE, 'utf8');
