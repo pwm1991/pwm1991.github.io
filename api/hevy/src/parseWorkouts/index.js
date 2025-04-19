@@ -10,17 +10,15 @@ const formatDurationToString = (duration) => {
 };
 
 const parseDuration = (start_time, end_time) => {
-    log.info('Parsing durations');
     const start = new Date(start_time);
     const end = new Date(end_time);
-    log.info([start, end]);
     const duration = (end - start) / 60000;
     return Math.round(duration);
 };
 
 const parseWorkouts = (workouts) => {
     if (!workouts) {
-        throw new Error('No workouts found');
+        return [];
     }
     const parsedWorkouts = workouts.map((event) => {
         const { id, title, start_time, end_time, exercises } = event.workout;

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "start": "node index.js"
+    "start": "node index.js",
+    "clean": "rm -rf hevy.jsonl"
   },
   "keywords": [
     "hevy",
