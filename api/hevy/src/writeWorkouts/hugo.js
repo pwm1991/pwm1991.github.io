@@ -15,6 +15,9 @@ const createHugoPost = async (workout) => {
   type: 'hevy'
   totalWeightInKg: ${workout.totalWeightInKg}
   duration: ${workout.duration}
+  # Disable SEO for this post
+  outputs: ["HTML"]
+  robots: "noindex, nofollow"
   ---
   `;
     const filePath = path.join(HUGO_POSTS_DIR, `${fileName}.md`);
