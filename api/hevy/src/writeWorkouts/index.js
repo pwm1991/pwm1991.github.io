@@ -1,5 +1,6 @@
 const log = require('../logger');
 const fs = require('fs');
+const createHugoPost = require('./hugo');
 
 const createFileIfNotExists = async (fileTarget) => {
     const fileExists = fs.existsSync(fileTarget);
@@ -22,6 +23,7 @@ const appendWorkOutToFile = async (workout) => {
         workout.forEach((workoutItem) => {
             const workoutString = JSON.stringify(workoutItem) + '\n';
             content += workoutString;
+            createHugoPost(workoutItem);
         });
     }
     log.info('Appending to file');
