@@ -11,12 +11,6 @@ if (!process.env.HEVY_KEY) {
 }
 log.info('HEVY_KEY found');
 
-// Check whether the the --no-write flag is passed
-if (process.argv.includes('--hugo')) {
-    // Set env flag
-    process.env.HUGO_WRITE = true;
-}
-
 const run = async () => {
     const workouts = await getWorkouts();
     if (workouts.length === 0) {
