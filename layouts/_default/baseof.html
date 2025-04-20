@@ -6,9 +6,9 @@
     <body>
         <main aria-role="main">
             <div class="container" role="main">
-                <div class="container__child">
-                    {{ partial "nav" . }}
-                    {{ partial "main/heading" . }}
+                <div class="container__child header">
+                  {{ partial "main/heading" . }}
+                  {{ partial "nav" . }}
                 </div>
                 {{ if .IsHome }}
                 <div

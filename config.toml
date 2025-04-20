@@ -19,9 +19,6 @@ disableKinds = ["taxonomy","taxonomyTerm","sitemap"]
   [[menu.main]]
     name = "About"
     url = "/about"
-  [[menu.main]]
-    name = "Workouts"
-    url = "/workouts"
   [[menu.icons]]
   [[menu.nav]]
     name = "Email"

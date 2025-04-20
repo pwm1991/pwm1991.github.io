@@ -6,7 +6,6 @@
 @import 'grid';
 @import 'blog';
 @import 'lists';
-@import 'hevy';
 
 @mixin for-desktop-up {
     @media (min-width: 1000px) {
