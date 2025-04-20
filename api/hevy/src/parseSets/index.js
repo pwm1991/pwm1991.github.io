@@ -6,28 +6,19 @@ const parseSets = (sets) => {
     }
     const reducedSetInformation = sets.map((set) => {
         const { reps, weight_kg, weight_lb } = set;
-        const isKG = weight_kg ? true : false;
-        let weight = 0;
-        if (isKG) {
-            weight = weight_kg;
-        } else {
-            weight = weight_lb * POUNDS_TO_KG;
-        }
-        const output = {
+        let weight = weight_kg ? weight_kg : weight_lb * POUNDS_TO_KG;
+        return {
             reps,
-            weight: weight || 0,
-            totalWeight: reps * weight || 0,
+            totalWeight: reps * Math.round(weight) || 0,
         };
-        return output;
     });
     const setsTotalWeight = reducedSetInformation.reduce((acc, set) => {
         return acc + set.totalWeight;
     }, 0);
-    const output = {
+    return {
         sets: reducedSetInformation,
         setsTotalWeight,
     };
-    return output;
 };
 
 module.exports = {

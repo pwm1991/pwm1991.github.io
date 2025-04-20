@@ -23,7 +23,7 @@ const appendWorkOutToFile = async (workout) => {
         workout.forEach((workoutItem) => {
             const workoutString = JSON.stringify(workoutItem) + '\n';
             content += workoutString;
-            createHugoPost(workoutItem);
+            if (process.env.HUGO_WRITE) createHugoPost(workoutItem);
         });
     }
     log.info('Appending to file');

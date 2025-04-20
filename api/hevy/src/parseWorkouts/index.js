@@ -31,7 +31,6 @@ const parseWorkouts = (workouts) => {
             log.debug(exercise.sets);
             return parseSets(exercise.sets);
         });
-        log.debug(sets);
         // Get the total weight of all the exercises
         totalWeightInKg = sets.reduce((acc, set) => {
             return acc + set.setsTotalWeight;
@@ -46,7 +45,6 @@ const parseWorkouts = (workouts) => {
             duration: formatDurationToString(duration) || '? min',
         };
     });
-    log.debug(parsedWorkouts);
     return parsedWorkouts;
 };
 
