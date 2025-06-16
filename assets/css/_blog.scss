@@ -62,6 +62,10 @@
     .caption {
         @include inline-copy;
         font-size: $font-size-sm;
+        margin-top: $padding-default-sm;
+        font-style: italic;
+        color: $font-color-dark;
+        text-align: center;
     }
 }
 
