@@ -30,18 +30,37 @@ $font-weight-light: 300;
 .heading-big {
     @include heading;
     font-size: $font-size-xl;
+    margin-top: $padding-default-md;
+    margin-bottom: $padding-default;
+}
+
+h1 {
+    @include heading;
+    font-size: $font-size-xl;
+    margin-top: $padding-default-md;
+    margin-bottom: $padding-default;
 }
 
 h2 {
     @include heading;
     font-size: $font-size-l;
+    margin-top: $padding-default-md;
+    margin-bottom: $padding-default-sm;
 }
 
 h3 {
-    @include heading;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-weight: $font-weight-light;
     font-size: $font-size-default;
-    padding-top: $padding-default-md;
-    padding-bottom: $padding-default-sm / 2;
+    margin-top: $padding-default;
+    margin-bottom: $padding-default-sm;
+}
+
+h4 {
+    @include heading;
+    font-size: $font-size-sm;
+    margin-top: $padding-default;
+    margin-bottom: $padding-default-sm / 2;
 }
 
 a {
