@@ -1,3 +1,5 @@
 <div class="list__category post-tags">
-    {{ range (.GetTerms "tags") }} {{ .LinkTitle }} {{ end }}
+    {{ range $i, $tag := (.GetTerms "tags") }}
+        {{- if $i -}}, {{ end }}{{ $tag.LinkTitle -}}
+    {{ end }}
 </div>
