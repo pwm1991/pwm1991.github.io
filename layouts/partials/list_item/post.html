@@ -3,5 +3,10 @@
     <h2 id="{{ .Title }}"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     {{ partial "time" .Date }}
   </div>
-    {{ .Summary }}
+  {{ .Summary }}
+  {{ if .Truncated }}
+    <div class="read-more">
+      <a href="{{ .Permalink }}">Read More &rarr;</a>
+    </div>
+  {{ end }}
 </article>

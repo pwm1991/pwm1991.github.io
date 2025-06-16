@@ -59,3 +59,17 @@
         font-size: $font-size-sm;
     }
 }
+
+.read-more {
+    margin-top: $padding-default-sm;
+    a {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-medium;
+    }
+}
+
+.post-tags {
+    margin-top: $padding-default;
+    padding-top: $padding-default-sm;
+    border-top: 1px solid $border-color;
+}

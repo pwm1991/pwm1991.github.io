@@ -1,0 +1,3 @@
+<div class="list__category post-tags">
+    {{ range (.GetTerms "tags") }} {{ .LinkTitle }} {{ end }}
+</div>
