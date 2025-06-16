@@ -1,9 +1,9 @@
-$font-size-default: 1em;
+$font-size-default: 1.125em; // Increased from 1em to 1.125em (18px at default browser font size)
 $font-size-xl: $font-size-default * 2;
 $font-size-l: $font-size-default * 1.4;
 $font-size-md: $font-size-default * 1;
 $font-size-sm: $font-size-default * 0.9;
-$font-size-xs: $font-size-default * 0.7;
+$font-size-xs: $font-size-default * 0.8; // Increased from 0.7 to 0.8 for better readability
 $font-family:
     'Gill Sans',
     -apple-system,
@@ -36,31 +36,34 @@ $font-weight-light: 300;
 
 h1 {
     @include heading;
-    font-size: $font-size-xl;
+    font-size: $font-size-xl; // ~2.25em
     margin-top: $padding-default-md;
     margin-bottom: $padding-default;
+    font-weight: $font-weight-medium; // Slightly heavier for better visibility
 }
 
 h2 {
     @include heading;
-    font-size: $font-size-l;
+    font-size: $font-size-l; // ~1.575em
     margin-top: $padding-default-md;
     margin-bottom: $padding-default-sm;
+    font-weight: $font-weight-medium; // Slightly heavier for better visibility
 }
 
 h3 {
     font-family: 'Times New Roman', Times, serif !important;
-    font-weight: $font-weight-light;
-    font-size: $font-size-default;
+    font-weight: $font-weight-medium; // Increased from light to medium
+    font-size: $font-size-default * 1.1; // Slightly larger than body text
     margin-top: $padding-default;
     margin-bottom: $padding-default-sm;
 }
 
 h4 {
     @include heading;
-    font-size: $font-size-sm;
+    font-size: $font-size-md; // Increased from sm to md
     margin-top: $padding-default;
     margin-bottom: $padding-default-sm / 2;
+    font-weight: $font-weight-medium; // Slightly heavier for better visibility
 }
 
 a {

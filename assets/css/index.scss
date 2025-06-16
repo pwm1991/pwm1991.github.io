@@ -23,6 +23,18 @@ p {
     font-family: $font-family;
 }
 
+html {
+    font-size: 16px; // Base font size for the document
+    
+    @include respond-to(small) {
+        font-size: 17px; // Slightly larger on tablets
+    }
+    
+    @include respond-to(medium) {
+        font-size: 18px; // Even larger on desktops
+    }
+}
+
 html,
 body {
     height: 100%;
@@ -33,6 +45,7 @@ body {
     font-size: $font-size-default;
     color: $font-color;
     background-color: $background-color;
+    line-height: 1.6; // Improved line height for better readability
 }
 
 p {
