@@ -18,11 +18,11 @@ This has taken the form of questions like:
 
 It's been particularly handy as I ramp up going to the gym this year, from 1-2x per week in 2024 to 4-5x per week in 2025. Having something that can evaluate a week's worth of data has been invaluable for me.
 
-## Using Claude Code
+### Using Claude Code
 
 Most of the script was written by hand, but when Claude Code came out I gave it $20 and had a go at vibe coding some improvements. I'd say about 20-30% of the script is from Claude, most of which has been improving the unit tests, switching to pino, and better handling of things like bodyweight workouts and edge cases.
 
-## Things I noticed while using Claude Code
+### Things I noticed while using Claude Code
 
 Wizardry! Super cool. It _burned_ through cash doing trivial exploration and going down rabbit holes. I asked it to make a react app to chart my workout data and it was absolutely fugly, terrible accessibility, but with much more detailed instruction it would have been really strong. And in a few years time, the v0.1 from poor prompting will be much higher.
 
@@ -32,7 +32,7 @@ A few specific things I noticed:
 2. It made good but ultimately pointless assumptions on the internationality of the repo. It saw that I was doing pounds-to-kilos conversion (for 1 piece of gym equipment, which now has `kg` labels) and had rewritten the repo to be weight-system agnostic, ultimately for no real benefit.
 3. CLAUDE.md was really good, and it led me to adding some to the projects my team maintains at work
 
-## What's next?
+### What's next?
 
 First I emailed Hevy asking them to support webhooks - if they support them, I'll rework this so that I don't have to run it in batch and manually. They replied quickly and said yes, but nothing as of yet.
 
