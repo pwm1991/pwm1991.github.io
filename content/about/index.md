@@ -8,7 +8,7 @@ I'm an engineering manager in the data domain, with a focus on behavioural data,
 
 Back in the day, I worked in elections on both sides of the pond, raised a tonne of money for my favourite political party, and done my share of (crisis) comms, marketing and engineering-adjacent teams.
 
-### {{% icon-link text="Analytics Engineering Lead, Depop" link="https://www.depop.com" %}}
+### {{% icon-link text="Engineering Manager, Depop" link="https://www.depop.com" %}}
 
 {{< subtitle text="August 2024 - Present">}}
 
