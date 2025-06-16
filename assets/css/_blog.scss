@@ -20,6 +20,10 @@
   @include inline-copy;
 }
 
+.post-content {
+  @include inline-copy;
+}
+
 .list-item {
   margin-top: $padding-default;
   margin-bottom: $padding-default;
@@ -65,6 +69,7 @@
     a {
         font-size: $font-size-sm;
         font-weight: $font-weight-medium;
+        display: inline-block;
     }
 }
 
