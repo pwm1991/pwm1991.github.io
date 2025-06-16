@@ -41,6 +41,14 @@ p {
         padding-top: 0;
     }
     padding-top: $padding-default-sm;
+    margin-bottom: $padding-default-sm;
+}
+
+blockquote {
+    margin: $padding-default 0;
+    padding-left: $padding-default;
+    border-left: 3px solid $border-color;
+    font-style: italic;
 }
 
 main {
