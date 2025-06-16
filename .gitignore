@@ -5,3 +5,5 @@ node_modules
 .hugo_build.lock
 .DS_Store
 .env
+
+**/.claude/settings.local.json
