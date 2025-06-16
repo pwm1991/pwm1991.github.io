@@ -12,7 +12,8 @@
 
 .content__list-content {
     p {
-        @include inline-copy;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
     }
 }
 
