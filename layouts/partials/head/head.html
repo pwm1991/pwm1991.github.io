@@ -21,23 +21,4 @@
 />
 <meta name="author" content="Pete Martin" />
 
-{{ if hugo.IsProduction }}
-<script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-WD310MPEEC"
-></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-WD310MPEEC');
-</script>
-{{ end }}
-
-<!-- {{ $style := resources.Get "css/index.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}"> -->
-
 {{ partial "head/schema" . }}
