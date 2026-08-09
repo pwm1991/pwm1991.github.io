@@ -1,7 +1,0 @@
-{{ $pages := where .Site.RegularPages "Section" "blog" }}
- {{ $pages := sort $pages "Date" "desc" }}
- {{ range $index, $page := $pages }}
-  {{ if eq .Section "blog" }}
-      {{ partial "list_item/post" . }}
-  {{ end }}
-{{ end }}

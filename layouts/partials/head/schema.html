@@ -48,7 +48,7 @@ $lang_url "/")}} {{- $scratch := newScratch }}
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "BlogPosting",
+      "@type": "WebPage",
       "headline": {{ .Title | plainify}},
       "name": "{{ .Title | plainify }}",
       "description": {{ with .Description | plainify }}{{ . }}{{ else }}{{ .Summary | plainify  }}{{ end -}},

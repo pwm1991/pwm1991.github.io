@@ -18,8 +18,7 @@
                 >
                     {{- partial "main/byline" . -}}
                 </div>
-                {{ end }} {{ if .IsHome }}
-                {{- partial "section/content" . -}} {{ end }}
+                {{ end }}
                 <div class="container__child content" role="main">
                     {{ block "main" .}}{{ end }}
                 </div>
